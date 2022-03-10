@@ -1,6 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
-import Intgegrate from './integrate';
+import Intgegrate from './Ui/integrate'
 function App() {
   return (
     <>

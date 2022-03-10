@@ -1,7 +1,7 @@
 import React,{useState} from 'react';
 import LandPurchasedTable from './LandTable';
 import PhaseTable from './PhaseTable';
-import chart from '../Ui/chart.png';
+import chart from '../chart.png'
 import MuzTable from './muazatable'
 
 export default function TableGrid(){
@@ -17,7 +17,8 @@ export default function TableGrid(){
       <div className="dropdownhead">
           <div className="greyhead"><p className='title'>Khasra</p></div>
           <div className="dropdown">
-              <select onChange={(e)=>{setTableval(e.target.value)}}>
+              {/* Onchange==>change property value based on dropdown */}
+              <select onChange={(e)=>{setTableval(e.target.value)}}> 
                   <option value="Land Providers">Land Providers</option>
                   <option value="Phase">Phase</option>
                   <option value="Muaza">Muaza</option>
@@ -30,6 +31,7 @@ export default function TableGrid(){
   </div>
 
   <div className="jqxtable">
+      {/* The below line Checks which table to display */}
       {tableval=="Muaza" ? <MuzTable/>:tableval=="Phase" ?<PhaseTable/>:<LandPurchasedTable/>}
       
  

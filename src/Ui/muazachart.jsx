@@ -19,16 +19,15 @@ const state = {
   ]
 }
 
-export default class LandChart extends React.Component {
+export default class MuazChart extends React.Component {
   render() {
     return (
       <div>
         <Bar
-          data={state}
+          data={state}   
           options={{
             title:{
               display:true,
-              text:'Average Rainfall per month',
               fontSize:20
             },
             legend:{

@@ -20,16 +20,20 @@ body{
   }
   .maptablesection{
     display: flex;
-    margin-top:20px;
+    margin-top:40px;
     margin-bottom:30px;
   }
   .title{
     margin-top: 15px;
+    padding:0px 10px;
   }
   .chartgraphshow{
     width:70%;
     align-items: center;
     margin: 0 auto;
+  }
+  .chartgraphsection{
+    margin-top:30px;
   }
   
   .dropdown,.icon{

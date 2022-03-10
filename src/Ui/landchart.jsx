@@ -19,7 +19,7 @@ const state = {
   ]
 }
 
-export default class MuazChart extends React.Component {
+export default class LandChart extends React.Component {
   render() {
     return (
       <div>
@@ -28,7 +28,6 @@ export default class MuazChart extends React.Component {
           options={{
             title:{
               display:true,
-              text:'Average Rainfall per month',
               fontSize:20
             },
             legend:{

@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import LandChart from './landchart';
 import PhaseChart from './phasechart';
 import MuzChart from './muazachart';
-import chart from './Ui/chart.png'
+import chart from '../Ui/chart.png'
 
 
 export default function Graphs(){
@@ -16,7 +16,7 @@ return(
           <div className="title"><p>Plot Reports</p></div>
       </div>
       <div className="dropdownhead">
-          {/* <div className="greyhead"><p className='title'></p></div> */}
+              {/* Onchange==>change property value based on dropdown */}
           <div className="dropdown">
               <select onChange={(e)=>{setChartval(e.target.value)}}>
                   <option value="Land Providers">Land Providers</option>
@@ -31,6 +31,7 @@ return(
   </div>
 
   <div className="chartgraphshow">
+      {/* change on dropdowns */}
       {chartval=="Muaza" ? <MuzChart/>:chartval=="Phase" ?<PhaseChart/>:<LandChart/>}
       
  

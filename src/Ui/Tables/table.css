@@ -1,0 +1,34 @@
+
+  body {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 300;
+    font-size: 14px;
+  }
+  
+ 
+  
+  .ReactTable .rt-tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .ReactTable .rt-tr:hover {
+    background-color: #ddd;
+  }
+  .ReactTable .rt-thead .rt-tr{
+    padding:12px;text-align: center;
+    background-color: grey;
+    color: white;
+
+  }
+  /* .ReactTable .rt-th{
+    text-align: center;
+    background-color: grey;
+    color: white;
+  } */
+  .ReactTable .rt-td {
+  
+    text-align: center;
+    
+  }
+  
+  
